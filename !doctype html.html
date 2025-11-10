@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Work Platform</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #005fa3;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0077cc;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+    }
+
+    .job-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .job-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+
+    .job-item:hover {
+      background: #f0f8ff;
+    }
+
+    .apply-btn {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .apply-btn:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077cc;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>मलाही पंचायत ऑनलाइन आम सेवा</h1>
+    <p></p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Jobs</a>
+    <a href="#">Post a Job</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Available Jobs</h2>
+
+    <ul class="job-list">
+      <li class="job-item">
+        <h3>Web Developer</h3>
+        <p>Looking for a front-end developer with React experience.</p>
+        <button class="apply-btn" onclick="apply('Web Developer')">Apply Now</button>
+      </li>
+
+      <li class="job-item">
+        <h3>Graphic Designer</h3>
+        <p>Design social media banners and marketing materials.</p>
+        <button class="apply-btn" onclick="apply('Graphic Designer')">Apply Now</button>
+      </li>
+
+      <li class="job-item">
+        <h3>Content Writer</h3>
+        <p>Write engaging blog posts and website copy.</p>
+        <button class="apply-btn" onclick="apply('Content Writer')">Apply Now</button>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Online Work Platform | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function apply(jobTitle) {
+      alert(`You have applied for the position: ${jobTitle}`);
+    }
+  </script>
+</body>
+</html>
